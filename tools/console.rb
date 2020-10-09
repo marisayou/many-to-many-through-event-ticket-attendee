@@ -11,8 +11,25 @@ end
 #Example of a variable definition that will be available in your Pry session once you've built out the model:
 
 lucy = Attendee.new("Lucy", 22)
+george = Attendee.new("George", 30)
+sabrina = Attendee.new("Sabrina", 26)
 
-#The variable `lucy` will point to an instance of a new attendee
+event1 = Event.new(1000, 400)
+event2 = Event.new(2500, 500)
+
+lucy.buy_ticket(event1)
+lucy.buy_ticket(event2)
+george.buy_ticket(event1)
+sabrina.buy_ticket(event2)
+
+lucy.events
+lucy.money_spent
+george.events
+george.money_spent
+sabrina.events
+sabrina.money_spent
+
+
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
