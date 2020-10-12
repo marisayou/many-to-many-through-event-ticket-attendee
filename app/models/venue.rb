@@ -34,6 +34,17 @@ class Venue
         return attendees_list
     end
 
+    def guest_lists
+        guest_lists = []
+        self.events.each do |event|
+            guest_list = {}
+            guest_list["name"] = event.name
+            guest_list["guest_list"] = event.attendees
+            guest_lists << guest_list
+        end
+        return guest_lists
+    end
+
 end
 
 # Venue.all

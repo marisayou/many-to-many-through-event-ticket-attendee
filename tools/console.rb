@@ -17,9 +17,9 @@ sabrina = Attendee.new("Sabrina", 26)
 venue1 = Venue.new("venue1", "seattle", 1000)
 venue2 = Venue.new("venue2", "redmond", 1500)
 
-event1 = Event.new(1000, 400, venue1)
-event2 = Event.new(2500, 500, venue2)
-event3 = Event.new(1000, 300, venue1)
+event1 = Event.new(1000, 400, venue1, "event1")
+event2 = Event.new(2500, 500, venue2, "event2")
+event3 = Event.new(1000, 300, venue1, "event3")
 
 lucy.buy_ticket(event1)
 lucy.buy_ticket(event2)
